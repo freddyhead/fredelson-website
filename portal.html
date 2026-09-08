@@ -17,6 +17,10 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       padding-top: 64px;
     }
+    .logo-link {
+      display: inline-block;
+      line-height: 0;
+    }
     .card {
       margin-top: 112px;
       width: 100%;
@@ -52,12 +56,14 @@
   </style>
 </head>
 <body>
-  <svg width="96" height="105" viewBox="0 0 228 249" role="img" aria-label="Fredelson Investments" xmlns="http://www.w3.org/2000/svg">
-    <rect width="66" height="249" fill="#00A2FF" />
-    <rect x="81" width="66" height="65" fill="#00A2FF" />
-    <rect x="81" y="79" width="66" height="65" fill="#00A2FF" />
-    <rect x="162" width="66" height="249" fill="#00A2FF" />
-  </svg>
+  <a href="index.html" class="logo-link" aria-label="Back to home">
+    <svg width="96" height="105" viewBox="0 0 228 249" role="img" aria-label="Fredelson Investments" xmlns="http://www.w3.org/2000/svg">
+      <rect width="66" height="249" fill="#00A2FF" />
+      <rect x="81" width="66" height="65" fill="#00A2FF" />
+      <rect x="81" y="79" width="66" height="65" fill="#00A2FF" />
+      <rect x="162" width="66" height="249" fill="#00A2FF" />
+    </svg>
+  </a>
   <div class="card">
     <form id="login-form">
       <input type="text" name="uname" placeholder="Enter Username" required autocomplete="username" />
