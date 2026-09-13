@@ -18,19 +18,24 @@
       background: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
-    nav {
+    .investors-box {
       display: flex;
       align-items: center;
-      gap: 12px;
-      font-size: 14px;
-      color: #56aaff;
-    }
-    nav a {
+      justify-content: center;
+      width: 228px;
+      padding: 16px 24px;
+      border: 0.5px solid #56aaff;
+      font-size: 16px;
+      font-weight: 500;
       color: #56aaff;
       text-decoration: none;
+      text-align: center;
+      transition: background-color 0.2s ease, color 0.2s ease;
     }
-    nav a:hover { text-decoration: underline; }
-    nav span { color: #888888; }
+    .investors-box:hover {
+      background: #56aaff;
+      color: #ffffff;
+    }
   </style>
 </head>
 <body>
@@ -41,12 +46,6 @@
     <rect x="162" width="66" height="66" fill="#00A2FF" />
     <rect x="162" y="79" width="66" height="170" fill="#00A2FF" />
   </svg>
-  <nav>
-    <a href="portal.html">Investor Portal</a>
-    <span>|</span>
-    <a href="mailto:media@fredelson.com">Media Inquiries</a>
-    <span>|</span>
-    <a href="mailto:hello@fredelson.com">Contact Us</a>
-  </nav>
+  <a href="portal.html" class="investors-box">Investors</a>
 </body>
 </html>
